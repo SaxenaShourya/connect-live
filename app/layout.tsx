@@ -5,6 +5,10 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { NextUIProvider } from "@nextui-org/react";
 
+// Vercel
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -37,7 +41,11 @@ export default function RootLayout({
             },
           }}
         >
-          <NextUIProvider>{children}</NextUIProvider>
+          <NextUIProvider>
+            {children}
+            <Analytics mode={"production"} />
+            <SpeedInsights />
+          </NextUIProvider>
         </ClerkProvider>
       </body>
     </html>
