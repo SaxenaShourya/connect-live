@@ -14,8 +14,7 @@ const StreamVideoClientProvider = ({ children }: { children: ReactNode }) => {
   const { user, isLoaded } = useUser();
 
   const initializeClient = async () => {
-    if (!isLoaded || !user)
-      return toast.error("Unexpected Internal Server Error");
+    if (!isLoaded || !user) return;
     if (!STREAM_API_KEY) return toast.error("Stream API key is missing");
 
     const client = new StreamVideoClient({

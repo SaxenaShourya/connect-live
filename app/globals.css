@@ -16,6 +16,9 @@
   h6 {
     @apply font-calSans tracking-wide;
   }
+  body {
+    @apply text-white;
+  }
   svg {
     @apply size-4 sm:size-5;
   }
