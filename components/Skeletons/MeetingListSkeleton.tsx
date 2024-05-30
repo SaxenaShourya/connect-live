@@ -14,6 +14,7 @@ const MeetingListSkeleton = ({ skeletons }: { skeletons: number }) => {
         <Card
           className="min-h-[232px] min-w-[330px] bg-dark-2/30 dark p-4"
           radius="lg"
+          key={index}
         >
           <CardHeader className="p-1">
             <Skeleton className="rounded-full mb-4 size-12">

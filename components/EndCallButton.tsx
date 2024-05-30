@@ -10,11 +10,11 @@ const EndCallButtton = () => {
   const call = useCall();
   const router = useRouter();
 
-  if (!call) return toast.error("Unable to fetch call");
-
   // https://getstream.io/video/docs/react/guides/call-and-participant-state/#participant-state-3
   const { useLocalParticipant } = useCallStateHooks();
   const localParticipant = useLocalParticipant();
+
+  if (!call) return toast.error("Unable to fetch call");
 
   const isMeetingOwner =
     localParticipant &&

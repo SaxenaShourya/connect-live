@@ -31,12 +31,15 @@ const MeetingSetup = ({
 
   const call = useCall();
 
-  if (!call) return toast.error("Unable to fetch call");
-
   // https://getstream.io/video/docs/react/ui-cookbook/replacing-call-controls/
   const [isMicCamToggled, setIsMicCamToggled] = useState(false);
 
   useEffect(() => {
+    if (!call) {
+      toast.error("Unable to fetch call");
+      return;
+    }
+
     if (isMicCamToggled) {
       call.camera.disable();
       call.microphone.disable();
@@ -44,7 +47,11 @@ const MeetingSetup = ({
       call.camera.enable();
       call.microphone.enable();
     }
-  }, [isMicCamToggled, call.camera, call.microphone]);
+  }, [call, isMicCamToggled]);
+
+  if (!call) {
+    return null;
+  }
 
   if (callTimeNotArrived) {
     return (

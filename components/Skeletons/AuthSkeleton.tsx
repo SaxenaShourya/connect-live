@@ -36,7 +36,7 @@ const AuthSkeleton = ({
         </Skeleton>
 
         {Array.from({ length: inputs }, (_, index) => (
-          <Skeleton className="w-[80%] h-[2rem] rounded-lg">
+          <Skeleton className="w-[80%] h-[2rem] rounded-lg" key={index}>
             <div className="size-full rounded-lg bg-secondary"></div>
           </Skeleton>
         ))}
@@ -48,7 +48,10 @@ const AuthSkeleton = ({
         </div>
 
         {Array.from({ length: footers }, (_, index) => (
-          <Skeleton className="w-[90%] h-[3rem] rounded-lg mt-4"></Skeleton>
+          <Skeleton
+            className="w-[90%] h-[3rem] rounded-lg mt-4"
+            key={index}
+          ></Skeleton>
         ))}
       </Card>
     </>

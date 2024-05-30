@@ -3,7 +3,7 @@ import React from "react";
 import HomeCardList from "@/components/HomeCardList";
 import { useUser } from "@clerk/nextjs";
 
-const page = () => {
+const HomePage = () => {
   const now = new Date();
   const time = now.toLocaleTimeString("en-US", {
     hour: "2-digit",
@@ -31,4 +31,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HomePage;
