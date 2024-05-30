@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Cal-sans;
+  src: url("/fonts/CalSans-SemiBold.ttf");
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-calSans tracking-wide;
+  }
+  svg {
+    @apply size-4 sm:size-5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-1;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-1 rounded-full transition-all;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-1/70;
+  }
+}
+
+@layer utilities {
+  .animateBottom::before {
+    @apply content-[""] absolute bottom-0 left-0 w-0 h-[2px] bg-primary-1 rounded-full;
+    transition: all 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  }
+  .animateBottom:hover::before {
+    @apply w-full;
+  }
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .bg-hero {
+    background-image: url("/hero-background.png");
+  }
+  .bg-hero-2 {
+    background-image: url("/hero-background-2.png");
+  }
+
+  .show-block {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    animation: show 0.7s forwards linear;
+  }
+
+  @keyframes show {
+    0% {
+      animation-timing-function: ease-in;
+      width: 0%;
+    }
+
+    100% {
+      animation-timing-function: ease-in;
+      width: 100%;
+    }
+  }
+  .break-text {
+    word-break: break-all;
+  }
+}
+
+.cl-logoBox a img {
+  @apply size-16;
+}
+.cl-card {
+  @apply py-3;
+}
+.cl-form {
+  @apply gap-4;
+}
+.str-video__call-controls {
+  @apply flex-wrap;
+}
+.str-video__video-preview-container {
+  @apply max-w-[20rem] max-h-[16rem] md:max-h-[22rem] md:max-w-[28rem] lg:max-w-[38rem];
+}
+.Toastify__toast {
+  border-radius: 10px !important;
+}

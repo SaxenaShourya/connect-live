@@ -1,0 +1,50 @@
+{
+  "name": "connect-live",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ConnectLive is your ultimate platform for seamless video conferencing. Schedule meetings, join calls, and manage recordings effortlessly.",
+  "keywords": [
+    "connect-live",
+    "video conferencing",
+    "seamless video calls",
+    "schedule meetings",
+    "budgeting tool",
+    "manage recordings",
+    "transaction management",
+    "join calls"
+  ],
+  "author": "Shourya Saxena",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.1.3",
+    "@internationalized/date": "^3.5.4",
+    "@nextui-org/react": "^2.4.0",
+    "@stream-io/node-sdk": "^0.2.3",
+    "@stream-io/video-react-sdk": "^1.0.14",
+    "clsx": "^2.1.1",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-toastify": "^10.0.5",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}
