@@ -1,4 +1,15 @@
-# ConnectLive - Seamless Video Conferencing
+<p align="center">
+  <img src="public/logo.svg" width="150" />
+</p>
+<h1 align="center">ConnectLive - Seamless Video Conferencing</h1>
+
+<img src="https://github.com/SaxenaShourya/connect-live/assets/143955797/03acb382-1786-4fc3-a6f9-095085e5af76" />
+
+<h2 align="center">
+  <a href="https://connect-live.vercel.app">Explore the Project Live!</a>
+</h2>
+
+<hr/>
 
 ConnectLive is your ultimate platform for seamless video conferencing. Schedule meetings, join calls, and manage recordings effortlessly. Enjoy secure authentication and a user-friendly interface for a smooth communication experience.
 
