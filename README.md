@@ -121,4 +121,4 @@ By working on ConnectLive, I not only enhanced my technical skills but also gain
 ## For more Content
 
 - For feedback and support, email us at saxenashourya000@gmail.com 📧
-- Follow me on [Linkedin](https://www.linkedin.com/in/shouryasaxena) for updates. 🔗
+- Follow me on [Linkedin](https://www.linkedin.com/in/saxena-shourya) for updates. 🔗
