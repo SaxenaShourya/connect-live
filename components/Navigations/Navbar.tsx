@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="hidden sm:flex items-center space-x-4">
         <Image src="/arrow.gif" width={30} height={30} alt="arrow gif" />
         <Link
-          href="https://www.linkedin.com/in/shouryasaxena/"
+          href="https://www.linkedin.com/in/saxena-shourya/"
           target="_blank"
           className="text-xl transition-all relative animateBottom"
         >
